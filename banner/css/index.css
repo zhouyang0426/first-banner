@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a,
+img {
+  display: block;
+}
+.banner {
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.banner .ulBox {
+  width: 800%;
+  overflow: hidden;
+  position: relative;
+}
+.banner .ulBox > li {
+  width: 12.5%;
+  float: left;
+}
+.banner .ulBox > li > a img {
+  width: 100%;
+}
+.banner .olBox {
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+}
+.banner .olBox > li {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff;
+  margin-right: 10px;
+  border-radius: 50%;
+  float: left;
+}
+.banner .olBox > li.active {
+  background-color: #fff;
+}
+.banner .olBox > li:last-of-type {
+  margin-right: 0;
+}
